@@ -1,0 +1,68 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="wa02.lecture2.controller.Page" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+							<sap.ui.layout.form:formContainers>
+								<sap.ui.layout.form:FormContainer title="Title" id="container0">
+									<sap.ui.layout.form:formElements>
+										<sap.ui.layout.form:FormElement label="Label" id="element0">
+											<sap.ui.layout.form:fields>
+												<Input width="100%" id="input0"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Label" id="element1">
+											<sap.ui.layout.form:fields>
+												<ComboBox xmlns="sap.m" id="box0">
+													<items>
+														<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item0"/>
+														<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item1"/>
+													</items>
+												</ComboBox>
+												<Input width="100%" id="input1"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Label" id="element2">
+											<sap.ui.layout.form:fields>
+												<DatePicker xmlns="sap.m" id="picker0"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Label" id="element3">
+											<sap.ui.layout.form:fields>
+												<RadioButtonGroup xmlns="sap.m" columns="5" id="group0">
+													<buttons>
+														<RadioButton text="Option One" id="button1"/>
+														<RadioButton text="Option Two" id="button2"/>
+														<RadioButton text="Option Two" id="button3"/>
+														<RadioButton text="Option Two" id="button4"/>
+														<RadioButton text="Option Two" id="button5"/>
+														<RadioButton text="Option Two" id="button6"/>
+													</buttons>
+												</RadioButtonGroup>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Label" id="element4">
+											<sap.ui.layout.form:fields>
+												<RatingIndicator xmlns="sap.m" maxValue="5" value="3" id="indicator1"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Label" id="element5">
+											<sap.ui.layout.form:fields>
+												<Slider xmlns="sap.m" value="30" id="slider0"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+									</sap.ui.layout.form:formElements>
+								</sap.ui.layout.form:FormContainer>
+							</sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:layout>
+								<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+							</sap.ui.layout.form:layout>
+						</sap.ui.layout.form:Form>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

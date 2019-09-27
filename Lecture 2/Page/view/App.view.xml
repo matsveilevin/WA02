@@ -1,0 +1,11 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<Page showHeader="false">
+		<VBox>
+			<Button press="handleOpenDialog" text="Open Dialog" class="sapUiSmallMargin" />
+
+			<Text id="T1" text="change event result" class="sapUiSmallMargin" />
+		</VBox>
+	</Page>
+	<Text text="Hello World" />
+	<Button text="Click me!" />
+</mvc:View>

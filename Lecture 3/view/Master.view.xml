@@ -1,0 +1,23 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:semantic="sap.m.semantic" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="WA02.L3.controller.Master">
+	<semantic:MasterPage id="page" title="{masterView>/title}" navButtonPress="onNavBack">
+		<semantic:content>
+			<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+				<headerToolbar>
+					<Toolbar id="toolbar1">
+						<Title text="{i18n>navigationMenuTitle}"/>
+						<ToolbarSpacer/>
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout0">
+						<sap.ui.layout:content>
+							<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="{i18n>users}" id="button1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Users'\}\}\}"/>
+							<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="{i18n>newUser}" id="button2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'User'\}\}\}"/>
+							<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="{i18n>Contacts}" id="button3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Contacts'\}\}\}"/>
+						</sap.ui.layout:content>
+					</sap.ui.layout:VerticalLayout>
+				</content>
+			</Panel>
+		</semantic:content>
+	</semantic:MasterPage>
+</mvc:View>

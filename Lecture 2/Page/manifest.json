@@ -1,0 +1,29 @@
+{
+	"sap.app": {
+		"id": "leverx.wa.lecture2",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "leverx.wa.lecture2.view.Page",
+			"type": "XML",
+			"async": true
+		},
+		"dependencies": {
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"config": {
+			"sample": {
+				"stretch": true,
+				"files": [
+					"Page.view.xml",
+					"manifest.json"
+				]
+			}
+		}
+	}
+}

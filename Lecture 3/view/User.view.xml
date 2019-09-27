@@ -1,0 +1,100 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:semantic="sap.m.semantic" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="WA02.L3.controller.User">
+	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="{i18n>user}" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
+		<semantic:customHeaderContent>
+			<Button press="openFullScreenView" id="cartIcon" text="" icon="sap-icon://user-edit"/>
+		</semantic:customHeaderContent>
+		<semantic:content>
+			<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+				<sap.ui.layout.form:formContainers>
+					<sap.ui.layout.form:FormContainer id="container1">
+						<sap.ui.layout.form:formElements>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserName}" id="element2_1562843743707">
+								<sap.ui.layout.form:fields>
+									<Input width="100%" id="input0"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserLastname}" id="element3_1562843753102">
+								<sap.ui.layout.form:fields>
+									<Input width="100%" id="input1"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserSex}" id="element4">
+								<sap.ui.layout.form:fields>
+									<Select xmlns="sap.m" id="select0">
+										<items>
+											<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="{i18n>male}" id="item13"/>
+											<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="{i18n>female}" id="item14"/>
+											<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="{i18n>other}" id="item15"/>
+										</items>
+									</Select>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserFamily}" id="element0">
+								<sap.ui.layout.form:fields>
+									<RadioButtonGroup xmlns="sap.m" columns="1" id="group0">
+										<buttons>
+											<RadioButton text="{i18n>happy}" id="button0"/>
+											<RadioButton text="{i18n>unhappy}" id="button1"/>
+										</buttons>
+									</RadioButtonGroup>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserHomeland}" id="element2">
+								<sap.ui.layout.form:fields>
+									<ComboBox xmlns="sap.m" id="box0_1562842986578">
+										<items>
+											<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="{i18n>homeland1}" id="item0"/>
+											<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="{i18n>homeland2}" id="item1"/>
+											<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="{i18n>homeland3}" id="item2"/>
+										</items>
+									</ComboBox>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserBornDate}" id="element1">
+								<sap.ui.layout.form:fields>
+									<DatePicker xmlns="sap.m" id="picker0"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserPerniciousРabits}" id="element3">
+								<sap.ui.layout.form:fields>
+									<CheckBox xmlns="sap.m" selected="false" id="box0"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserRate}" id="element5">
+								<sap.ui.layout.form:fields><RatingIndicator xmlns="sap.m" maxValue="5" value="3" id="indicator0"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserAccess}" id="element6">
+								<sap.ui.layout.form:fields>
+									<Switch xmlns="sap.m" id="switch0"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserSalary}" id="element7">
+								<sap.ui.layout.form:fields>
+									<Slider xmlns="sap.m" value="30" id="slider0"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="{i18n>newUserWorkDayLength}" id="element8">
+								<sap.ui.layout.form:fields>
+									<TimePicker xmlns="sap.m" id="picker0_1562843227689"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+						</sap.ui.layout.form:formElements>
+					</sap.ui.layout.form:FormContainer>
+				</sap.ui.layout.form:formContainers>
+				<sap.ui.layout.form:layout>
+					<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+				</sap.ui.layout.form:layout>
+			</sap.ui.layout.form:Form>
+			<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout" id="form0_1562842832702" columnsL="3" columnsM="2">
+				<sap.ui.layout.form:content>
+					<core:Title text="Simple Form" id="title0"/>
+					<Label text="Label 1" id="label0"/>
+					<Input width="100%" id="input5"/>
+					<Input width="100%" id="input6"/>
+					<Label text="Label 2" id="label1"/>
+					<Input width="100%" id="input7"/></sap.ui.layout.form:content>
+			</sap.ui.layout.form:SimpleForm>
+		</semantic:content>
+	</semantic:DetailPage>
+</mvc:View>

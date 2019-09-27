@@ -1,0 +1,49 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="WA02.L3.controller.Contacts">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout1">
+						<sap.ui.layout:content>
+						
+									<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form"
+										editable="true" id="form0">
+										<sap.ui.layout.form:formContainers>
+											<sap.ui.layout.form:FormContainer title="Feedback" id="container1">
+												<sap.ui.layout.form:formElements>
+													<sap.ui.layout.form:FormElement label="Rate" id="element3">
+														<sap.ui.layout.form:fields>
+															<RatingIndicator xmlns="sap.m" maxValue="5" value="4"
+																id="indicator0" />
+														</sap.ui.layout.form:fields>
+													</sap.ui.layout.form:FormElement>
+													<sap.ui.layout.form:FormElement label="Comment" id="element2">
+														<sap.ui.layout.form:fields>
+															<TextArea xmlns="sap.m" rows="4" id="area0"
+																placeholder="Something about us..." />
+															</sap.ui.layout.form:fields>
+				                                </sap.ui.layout.form:FormElement>
+				                                 <sap.ui.layout.form:FormElement label="Email" id="element1">
+				                                    <sap.ui.layout.form:fields>
+				                                        <Input width="100%" id="input1"/>
+				                                        <Button xmlns="sap.m" text="Send" id="button0" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Users'\}\}\}"/>
+				                                    </sap.ui.layout.form:fields>
+				                                </sap.ui.layout.form:FormElement>
+				                            </sap.ui.layout.form:formElements>
+				                        </sap.ui.layout.form:FormContainer>
+				                    </sap.ui.layout.form:formContainers>
+				                    <sap.ui.layout.form:layout>
+				                        <sap.ui.layout.form:ResponsiveGridLayout id="layout1_1562848931991"/>
+				                    </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+				          
+				        </sap.ui.layout:content>
+				    </sap.ui.layout:VerticalLayout>
+				</content>
+			<headerContent>
+			    <Link xmlns="sap.m" href="skype://matsvei.levin@leverx.com" text="Call Skype" id="link0"/>
+			</headerContent>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,1 @@
+function Logging(){console.log('Egor was fired!');}
